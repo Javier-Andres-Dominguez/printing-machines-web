@@ -7,8 +7,9 @@
     <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon"><!-- icono web -->
     <title>Document</title>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="javascripts/javascript.js"></script>
 </head>
-<body>
+<body onload="init()">
     <div class="navbar">
         <a href="#" class="logo">Impresoras láser</a>
         <ul class="nav">
@@ -100,22 +101,9 @@
         </div>
     </div>
     <div class="footer">
-        <p>Será un placer atender sus apoyo personal en<a href="mailto:javier.andres.alu@iescampanillas.com">Mi correo</a></p>
+        <p>Será un placer atender sus apoyo personal en <a href="mailto:javier.andres.alu@iescampanillas.com">Mi correo</a></p>
         <p>Página creada por Javier Andrés Domínguez</p>
         <p>Vuelva a visitarnos pronto</p>
     </div>
-    <script>
-        const nav = document.querySelector(".nav-list");
-        const navBtn = document.querySelector(".nav-btn");
-        const navBtn = document.querySelector(".cancel-btn");
-        navBtn.oneclick = ()=>{
-            nav.classList.add("active");
-            navBtn.classList.add("hide");
-        }
-        cancelBtn.oneclick = ()=>{
-            nav.classList.remove("active");
-            navBtn.classList.remove("hide");
-        }
-    </script>
 </body>
 </html>
