@@ -1,0 +1,142 @@
+body{
+    margin:0;
+    padding:0;
+}
+.navbar {
+    position:fixed;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row;
+    flex-wrap:wrap;
+    background-color: rgb(192, 174, 150);
+    width:100%;
+    height:70px;
+    z-index:1;
+}
+.nav{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    margin-right: 5%;
+}
+.logo{
+    flex: 1 1 auto;
+    margin-left: 2%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 35px;
+}
+a{
+    margin: 15px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.nav li a:hover{
+    color:white;
+}
+.navbar a:hover{
+    color:white;
+}
+.banner-area{
+    position:relative;
+    background-image:url('../imagenes/impresoralaser.jpg');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.introduccion-area, .tipos-area, .funcionamiento-area, .instalacion-area, .marcas-area{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 700px;
+}
+.text-part{
+    widows: 65%;
+    height: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+h1{
+    font-size: 50px;
+}
+p{
+    font-size:20px;
+    line-height: 30px;
+}
+li{
+    
+    font-size: 15px;
+    line-height: 30px;
+    
+}
+.introduccion-area, .funcionamiento-area, .marcas{
+    background-color: white;
+}
+.tipos-area, .instalacion-area{
+    background-color: black;
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+.icon{
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+.icon.cancel-btn{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+img{
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 100%;
+}
+.footer{
+    background-color: grey;
+    text-align: center;
+}
+@media (max-width: 1212px){
+    .icon{
+        display:block;
+    }
+    .icon.hide{
+        display: none;
+    }
+    .navbar .nav{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        background:rgb(192, 174, 150);
+        display: block;
+        padding:40px 0;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    .navbar .nav.active{
+        left: 0%;
+    }
+    .navbar .nav li{
+        margin-top:45px;
+    }
+    .navbar .nav li a{
+        font-size: 23px;
+    }
+}
